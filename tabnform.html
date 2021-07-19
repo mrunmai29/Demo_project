@@ -1,0 +1,312 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .hrSec {
+            background-color: #d6f2fb;
+            margin-top: 200px;
+        }
+        
+        .hrBox img {
+            margin-top: -40px;
+            opacity: 0.7;
+            height: 80px;
+            float: right;
+        }
+        
+        .hrTopSec {
+            border-radius: 51px;
+            box-shadow: 0 3px 25px 0 rgba(188, 188, 188, 0.16);
+            border: solid 12px #f9f9f9;
+            background-color: #ffffff;
+        }
+        
+        @import url('https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap');
+        h2 {
+            color: #000;
+            text-align: center;
+            font-size: 2em;
+        }
+        
+        .warpper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .tab {
+            cursor: pointer;
+            padding: 10px 20px;
+            margin: 0px 2px;
+            background: rgb(24, 44, 134);
+            display: inline-block;
+            color: #fff;
+            border-radius: 3px 3px 0px 0px;
+            box-shadow: 0 0.5rem 0.8rem #00000080;
+        }
+        
+        .panels {
+            background: #fffffff6;
+            box-shadow: 0 2rem 2rem #00000080;
+            min-height: 200px;
+            width: 100%;
+            max-width: 500px;
+            border-radius: 40px;
+            overflow: hidden;
+            padding: 20px;
+        }
+        
+        .panel {
+            display: none;
+            animation: fadein .8s;
+        }
+        
+        @keyframes fadein {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .panel-title {
+            font-size: 1.5em;
+            font-weight: bold
+        }
+        
+        .radio {
+            display: none;
+        }
+        
+        #one:checked~.panels #one-panel,
+        #two:checked~.panels #two-panel,
+        #three:checked~.panels #three-panel {
+            display: block
+        }
+        
+        #one:checked~.tabs #one-tab,
+        #two:checked~.tabs #two-tab,
+        #three:checked~.tabs #three-tab {
+            background: #fffffff6;
+            color: rgb(185, 185, 192);
+            border-top: 3px solid #000;
+        }
+        
+        .ip1[type=text],
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            resize: vertical;
+        }
+        
+        .lb1 {
+            padding: 12px 12px 12px 0;
+            display: inline-block;
+        }
+        
+        .ip1[type=submit] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            float: right;
+        }
+        
+        .ip1[type=submit]:hover {
+            background-color: #45a049;
+        }
+        
+        .container {
+            border-radius: 5px;
+            padding: 20px;
+        }
+        
+        .fcol {
+            float: left;
+            width: 25%;
+            margin-top: 6px;
+        }
+        
+        .fcol7 {
+            float: left;
+            width: 75%;
+            margin-top: 6px;
+        }
+        /* Clear floats after the columns */
+        
+        .rw2:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        
+        .ffrm {
+            border-radius: 29px;
+            box-shadow: -11px 11px 27px 0 rgba(190, 190, 190, 0.14);
+            border: solid 7px rgba(233, 233, 233, 0.41);
+            background-color: #ffffff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="hrSec">
+        <span class="hrBox"><img src="gh.png"></span>
+        <div class="container">
+            <h3>HR mange Lorem ipsum dolor sit amet.</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, sint.</p>
+            <div class="row">
+
+
+                <div class="col-6">
+
+
+                    <div class="hrTopSec p-0 m-0 text-center container">
+                        <h2 class="mt-4 mb-4">Employees</h2>
+                        <div class="warpper">
+                            <input class="radio" id="one" name="group" type="radio" checked>
+                            <input class="radio" id="two" name="group" type="radio">
+                            <input class="radio" id="three" name="group" type="radio">
+                            <div class="tabs">
+                                <label class="tab" id="one-tab" for="one">Org Chart</label>
+                                <label class="tab" id="two-tab" for="two">Employee</label>
+                                <label class="tab" id="three-tab" for="three">Bulk Info</label>
+                            </div>
+                            <input type="text" placeholder="Bulk Update Export" class="form-control p-2 w-75 mt-4" style="background-color: rgba(235, 215, 240, 0.308); border: transparent; border-radius: 10px;">
+                            <div class="panels">
+                                <div class="panel" id="one-panel">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="card mt-3" style="border-radius: 24px; box-shadow: 0 0.2 19px 0 rgba(167, 167, 167, 0.16);">
+                                                    <img class="card-img-top" src="pic.jpg" style="border-radius: 50%; width:160px; margin-left: auto; margin-right: auto;" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h5>Naomi Brett</h5>
+                                                        <p class="card-text">Software Engineer<br>Full Time<br>San Fransisco</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card mt-3" style="border-radius: 24px; box-shadow: 0 0.2 19px 0 rgba(167, 167, 167, 0.16);">
+                                                    <img class="card-img-top" src="pic.jpg" style="border-radius: 50%; width:160px; margin-left: auto; margin-right: auto;" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h5>Naomi Brett</h5>
+                                                        <p class="card-text">Software Engineer<br>Full Time<br>San Fransisco</p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+
+                                            <div class="col-6">
+                                                <div class="card mt-3" style="border-radius: 24px; box-shadow: 0 0.2 19px 0 rgba(167, 167, 167, 0.16);">
+                                                    <img class="card-img-top" src="pic.jpg" style="border-radius: 50%; width:160px; margin-left: auto; margin-right: auto;" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h5>Naomi Brett</h5>
+                                                        <p class="card-text">Software Engineer<br>Full Time<br>San Fransisco</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="card mt-3" style="border-radius: 24px; box-shadow: 0 0.2 19px 0 rgba(167, 167, 167, 0.16);">
+                                                    <img class="card-img-top" src="pic.jpg" style="border-radius: 50%; width:160px; margin-left: auto; margin-right: auto;" alt="Card image cap">
+                                                    <div class="card-body">
+                                                        <h5>Naomi Brett</h5>
+                                                        <p class="card-text">Software Engineer<br>Full Time<br>San Fransisco</p>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel" id="two-panel">
+
+                                </div>
+                                <div class="panel" id="three-panel">
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div> -->
+                </div>
+
+
+                <div class="col-6">
+
+                    <div class="ffrm container">
+                        <form>
+                            <div class="rw2 row">
+                                <div class="fcol col-25">
+                                    <label class="lb1" for="fname">First Name</label>
+                                </div>
+                                <div class="fcol7 col-75">
+                                    <input class="ip1" type="text" id="fname" name="firstname" placeholder="Your name..">
+                                </div>
+                            </div>
+                            <div class="rw2 row">
+                                <div class="fcol col-25">
+                                    <label class="lb1" for="lname">Last Name</label>
+                                </div>
+                                <div class="fcol7 col-75">
+                                    <input class="ip1" type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                </div>
+                            </div>
+                            <div class="rw2 row">
+                                <div class="fcol col-25">
+                                    <label class="lb1" for="lname">Last Name</label>
+                                </div>
+                                <div class="fcol7 col-75">
+                                    <input class="ip1" type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                </div>
+                            </div>
+                            <div class="rw2 row">
+                                <div class="fcol col-25">
+                                    <label class="lb1" for="lname">Last Name</label>
+                                </div>
+                                <div class="fcol7 col-75">
+                                    <input class="ip1" type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                </div>
+                            </div>
+                            <div class="rw2 row">
+                                <div class="fcol col-25">
+                                    <label class="lb1" for="lname">Last Name</label>
+                                </div>
+                                <div class="fcol7 col-75">
+                                    <input class="ip1" type="text" id="lname" name="lastname" placeholder="Your last name..">
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

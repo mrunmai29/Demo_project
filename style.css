@@ -1,0 +1,504 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.getStartedBtn {
+    font-family: 'Days One', sans-serif;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: lavender;
+    border: 2px solid rgba(50, 44, 70, 0.219);
+    border-radius: 10px !important;
+    background: rgb(84, 51, 145);
+}
+
+.signUpBtn:hover {
+    color: #FFF;
+    background: rgba(138, 147, 153, 0.75);
+    border: 2px solid rgba(80, 110, 133, 0.75);
+}
+
+.txt1 {
+    color: rgba(158, 152, 158, 0.801);
+    font-family: 'Days One', sans-serif;
+    letter-spacing: 2px;
+}
+
+.signUpBtn {
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    color: rgba(183, 190, 196, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(141, 159, 173, 0.75);
+    border-radius: 40px;
+    background: transparent;
+    transition: all 0.3s ease 0s;
+}
+
+.tryUpBtn {
+    font-family: Raleway-SemiBold;
+    font-size: 13px;
+    text-align: center;
+    padding-bottom: 0;
+    color: rgba(183, 190, 196, 0.75);
+    letter-spacing: 1px;
+    line-height: 15px;
+    border: 2px solid rgba(141, 159, 173, 0.75);
+    border-radius: 40px;
+    background: rgba(194, 194, 193, 0.308);
+    transition: all 0.3s ease 0s;
+    margin-top: 70px;
+}
+
+.tryUpBtn:hover {
+    color: #FFF;
+    background: rgba(138, 147, 153, 0.75);
+    border: 2px solid rgba(80, 110, 133, 0.75);
+}
+
+.gradientSec {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+.gradientSec::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(57deg, rgb(245, 31, 209), rgb(49, 47, 199));
+    clip-path: polygon(0% 0%, 100% 0%, 100% 60%, 0% 94%);
+}
+
+.crd1 {
+    background: rgba(196, 196, 240, 0.418);
+    border: 2px solid rgba(223, 223, 241, 0.712);
+    border-radius: 20px;
+    float: right;
+    margin-top: 100px;
+}
+
+.card-title {
+    font-family: Ebrima;
+    font-size: 30px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.24px;
+    text-align: left;
+    color: #b341cd;
+    margin-bottom: 0;
+}
+
+.ourServices1 {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: Ebrima;
+    font-size: 60px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.94;
+    letter-spacing: 3.1px;
+    text-align: left;
+    color: #2c2c2c;
+}
+
+.card-os {
+    width: 250px;
+    height: 350px;
+    border-radius: 20px;
+    box-shadow: 0 3px 27px 0 rgba(181, 181, 181, 0.11);
+    background-color: #ffffff;
+}
+
+.btn-os {
+    width: 150px;
+    height: 55px;
+    margin-right: 0px;
+    margin-left: 70px;
+    margin-top: -8px;
+    padding: 10px 20px 10px 25px;
+    border-radius: 16px;
+    box-shadow: 0 3px 27px 0 #ecc4ec;
+    border: solid 1px #ffffff;
+    background-image: linear-gradient(115deg, #e300ee -4%, #720077 118%);
+}
+
+.hrSec {
+    background-color: #d6f2fb;
+    margin-top: 200px;
+    padding-bottom: 400px;
+}
+
+.hrBox img {
+    margin-top: -40px;
+    opacity: 0.7;
+    height: 80px;
+    float: right;
+}
+
+.hrg {
+    font-family: Ebrima;
+    font-size: 80px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 7.92px;
+    text-align: left;
+    color: #003274;
+}
+
+.mng1 {
+    font-family: Ebrima;
+    opacity: 0.54;
+    font-size: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 1.67px;
+    text-align: left;
+    color: #1d1d1d;
+}
+
+.imh {
+    padding-left: 50px;
+}
+
+.grd {
+    margin-top: -200px;
+}
+
+.gradient {
+    width: 100%;
+    height: 160vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(57deg, rgb(245, 31, 209), rgb(49, 47, 199));
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.blue {
+    width: 100%;
+    height: 160vh;
+    background-image: linear-gradient(128deg, #004094 -6%, #003374 63%);
+    clip-path: polygon(0% 20%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.tab02 {
+    margin-top: 30px;
+    border-radius: 30px;
+    box-shadow: 0 3px 25px 0 rgba(183, 183, 183, 0.16);
+    border: solid 7px rgba(238, 238, 238, 0.44);
+    background-color: #fcfcfc;
+}
+
+.tab01 {
+    border-radius: 30px;
+    box-shadow: 0 3px 25px 0 rgba(183, 183, 183, 0.16);
+    border: solid 7px rgba(238, 238, 238, 0.44);
+    background-color: #fcfcfc;
+    margin-top: 80px;
+}
+
+.payroll {
+    font-family: Ebrima;
+    font-size: 80px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.88;
+    letter-spacing: 7.92px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.payroll2 {
+    opacity: 0.86;
+    font-family: Ebrima;
+    font-size: 27px;
+    padding-top: 20px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.43;
+    letter-spacing: 1.67px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.payroll3 {
+    padding-left: 80px;
+    padding-right: 100px;
+    padding-top: 90px;
+}
+
+.recruti {
+    padding-top: 35px;
+    opacity: 0.59;
+    font-family: SegoeUI;
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.68;
+    letter-spacing: 2.64px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.insure {
+    padding-left: 50px;
+    font-family: Ebrima;
+    font-size: 80px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: 7.92px;
+    text-align: left;
+    color: #003274;
+}
+
+.insureCont {
+    background-color: #eaf8fd;
+    margin-top: -40px;
+    padding-top: 100px;
+    padding-bottom: 400px;
+}
+
+.insure2 {
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 20px;
+    font-family: Ebrima;
+    font-size: 27px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.36;
+    letter-spacing: 1.67px;
+    text-align: left;
+    color: #1d1d1d;
+}
+
+.insure3 {
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 40px;
+    font-family: Ebrima;
+    font-size: 23px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.88;
+    letter-spacing: 2.64px;
+    text-align: left;
+    color: #818181;
+}
+
+.txth {
+    text-shadow: 0 3px 10px #a5e3ff;
+    font-family: Ebrima;
+    font-size: 25px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 0.95;
+    letter-spacing: 0.48px;
+    text-align: center;
+    color: #003274;
+}
+
+.gradient1 {
+    width: 100%;
+    height: 230vh;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: linear-gradient(57deg, rgb(245, 31, 209), rgb(49, 47, 199));
+    clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.blue1 {
+    width: 100%;
+    height: 230vh;
+    background: darkblue;
+    clip-path: polygon(0% 20%, 100% 0%, 100% 80%, 0% 100%);
+}
+
+.bene1 {
+    padding-left: 50px;
+    font-family: Ebrima;
+    font-size: 80px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.13;
+    letter-spacing: 7.92px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.bene2 {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 100px;
+    opacity: 0.73;
+    font-family: Ebrima;
+    font-size: 27px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.7;
+    letter-spacing: 2.9px;
+    text-align: left;
+    color: #ffffff;
+}
+
+.bend1 {
+    margin-top: 50px;
+    padding-left: 50px;
+}
+
+.bene4 {
+    width: 550px;
+    opacity: 0.99;
+    border-radius: 20px;
+    box-shadow: -8px -8px 36px 0 rgba(59, 59, 59, 0.19);
+}
+
+.ben {
+    margin-top: 40px;
+    width: 400px;
+    border-radius: 20px;
+    box-shadow: 12px 12px 28px 0 rgba(62, 62, 62, 0.16);
+    background-color: #ffffff;
+}
+
+.card1 {
+    width: 400px;
+    border-radius: 25px;
+    box-shadow: -8px 8px 24px 0 rgba(77, 77, 77, 0.33);
+    background-image: linear-gradient(105deg, #fffed5, #f9a174 79%);
+}
+
+.bend2 {
+    margin-top: -60px;
+}
+
+.chart1 {
+    background-image: url("cht10.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+}
+
+.chart20 {
+    text-transform: capitalize;
+    margin-top: 170px;
+    padding-left: 50px;
+    font-family: Ebrima;
+    font-size: 50px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: 4.36px;
+    text-align: left;
+    color: #01295e;
+}
+
+.chart30 {
+    padding-left: 50px;
+    padding-top: 20px;
+    font-family: Ebrima;
+    font-size: 27px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: 2.64px;
+    text-align: left;
+    color: #848484;
+}
+
+.cht2 {
+    width: 630px;
+}
+
+.chtd2 {
+    margin-top: 100px;
+}
+
+.bk2 {
+    margin-top: 200px;
+    background-image: url("bk21.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left top;
+    height: 180vh;
+}
+
+.bk20 {
+    padding-right: 50px;
+    text-transform: capitalize;
+    font-family: Ebrima;
+    font-size: 50px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.38;
+    letter-spacing: 4.36px;
+    text-align: center;
+    color: #01295e;
+    margin-top: 20px;
+}
+
+.bk30 {
+    padding-right: 50px;
+    margin-top: 170px;
+    font-size: 45px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: 4.16px;
+    text-align: center;
+    color: #4b4b4b;
+    text-transform: capitalize;
+}
+
+.gbtn {
+    border-radius: 21px;
+    padding: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    width: 230px;
+    background-image: linear-gradient(102deg, #e300ee, #720077 99%);
+    font-family: Ebrima;
+    font-size: 23px;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    letter-spacing: 1.32px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.client {
+    background-color: #d6f2fb;
+}
